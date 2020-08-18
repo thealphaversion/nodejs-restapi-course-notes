@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use(express.json());
+app.use(express.json());        // reads the request and if there is a json object in the body of the request then it
+                                // will parse the json object in the request and then it will set the request.body property
 
 /**
  * It has useful methods like
